@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ImgAscii - Convert Images into ASCII</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>ImgAscii</h1>
+    <h2>Easily convert images to ASCII</h2>
+    <div id="content">
+      <div id="progress"><div></div></div>
+      <input type="file" id="myFile" accept="image/*">
+      <div class="input-container">
+        <div>Quality</div>
+        <select id="quality">
+          <option value="4">Very Low</option>
+          <option value="8">Low</option>
+          <option value="16">Medium</option>
+          <option value="32">High</option>
+          <option value="64">Very high</option>
+        </select>
+      </div>
+      <div class="input-container">
+        <div>Color mode</div>
+        <input type="checkbox" id="choice"></input>
+      </div>
+      <button id="launch" onclick="launch()">Launch</button>
+      <div id="result"></div>
+    </div>
+    <footer>
+      <a href="https://github.com/Rominou34">
+        <img src="github.png" alt="GitHub Logo 32px"></img>
+      </a>
+    </footer>
+  </body>
+</html>
